@@ -4,45 +4,46 @@ module.exports = {
     es2021: true,
   },
   extends: [
-    "plugin:react/recommended",
-    "airbnb",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
+    'plugin:react/recommended',
+    'airbnb',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:prettier/recommended',
   ],
-  parser: "@typescript-eslint/parser",
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
     ecmaVersion: 12,
-    sourceType: "module",
+    sourceType: 'module',
   },
-  plugins: ["react", "react-hooks", "@typescript-eslint", "prettier"],
+  plugins: ['react', 'react-hooks', '@typescript-eslint', 'prettier'],
   rules: {
-    "no-use-before-define": "off",
-    "prettier/prettier": "error",
-    "@typescript-eslint/no-use-before-define": ["error"],
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn",
-    "react/react-in-jsx-scope": "off",
-    "react/jsx-filename-extension": [
+    'no-use-before-define': 'off',
+    'prettier/prettier': 'error',
+    '@typescript-eslint/no-use-before-define': ['error'],
+    '@typescript-eslint/no-var-requires': 'off',
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
+    'react/react-in-jsx-scope': 'off',
+    'react/jsx-filename-extension': [
       1,
       {
-        extensions: [".tsx"],
+        extensions: ['.tsx'],
       },
     ],
-    "import/prefer-default-export": "off",
-    "import/extensions": [
-      "error",
-      "ignorePackages",
+    'import/prefer-default-export': 'off',
+    'import/extensions': [
+      'error',
+      'ignorePackages',
       {
-        ts: "never",
-        tsx: "never",
+        ts: 'never',
+        tsx: 'never',
       },
     ],
   },
   settings: {
-    "import/resolver": {
+    'import/resolver': {
       typescript: {},
     },
   },
