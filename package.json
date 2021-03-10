@@ -10,7 +10,7 @@
     ]
   },
   "scripts": {
-    "dev": "webpack serve",
+    "dev": "webpack serve --port 3000",
     "build": "cross-env NODE_ENV=production webpack",
     "lint": "eslint ./src --ext .js,.jsx --fix"
   },
